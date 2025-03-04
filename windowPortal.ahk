@@ -13,7 +13,7 @@ SysGet, CMon, Monitor, %C_monitor%
 ; Default mode is AB (A+B active, C ignored)
 currentMode := "AB"
 ignoredMon := C_monitor
-TrayTip, Monitor Mode, Now in AB mode (A+B, ignoring C), 2
+TrayTip, Monitor Mode, Now in AB mode (A+B ignoring C), 2
 
 SetTimer, MonitorMouse, 30
 return
@@ -26,7 +26,7 @@ return
 
     currentMode := "AB"
     ignoredMon := C_monitor
-    TrayTip, Monitor Mode, Switched to AB mode (A+B, ignoring C), 2
+    TrayTip, Monitor Mode, Switched to AB mode (A+B ignoring C), 2
 
     CoordMode, Mouse, Screen
     MouseGetPos, curX, curY
@@ -62,7 +62,7 @@ return
 
     currentMode := "AC"
     ignoredMon := B_monitor
-    TrayTip, Monitor Mode, Switched to AC mode (A+C, ignoring B), 2
+    TrayTip, Monitor Mode, Switched to AC mode (A+C ignoring B), 2
 
     CoordMode, Mouse, Screen
     MouseGetPos, curX, curY
